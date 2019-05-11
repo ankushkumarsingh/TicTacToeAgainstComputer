@@ -20,13 +20,14 @@ enum SquareType:String {
 
 let gameBoardSize = 9
 
+
 class Game {
     var mode: GameMode
     var playerX: Player     // Always the first player
     var playerO: Player     // Always the second player
     var board: [SquareType]
     var moves: [Int] = []
-    
+  
   init(mode: GameMode = .auto) {
         self.mode = mode
         self.board = Array<SquareType>(repeating: .empty, count: gameBoardSize)
@@ -63,3 +64,4 @@ class Game {
         
     }
 }
+

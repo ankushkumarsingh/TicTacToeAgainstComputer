@@ -16,9 +16,10 @@ enum PlayerMode {
 class Player {
     var mode: PlayerMode
     var moves: [Int] = []
-    
+
     init(mode: PlayerMode = .human) {
         self.mode = mode
     }
     
 }
+
